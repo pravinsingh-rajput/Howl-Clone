@@ -3,6 +3,7 @@ import Navbar from "./component/navbar/Navbar.js";
 import Home from "./component/home/Home.js";
 import Client from "./component/client/Client.js";
 import Contact from "./component/contact/Contact.js";
+import FooterComp from "./component/footerComp/FooterComp.js";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <Client />
       <Contact />
+      <FooterComp />
     </div>
   );
 }
