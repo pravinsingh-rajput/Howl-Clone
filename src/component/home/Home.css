@@ -4,9 +4,6 @@ main {
   height: 700px;
   padding: 10px;
   position: relative;
-}
-
-main {
   display: flex;
 }
 
@@ -24,8 +21,8 @@ main {
 
 .home_headline_2 {
   margin: 0px;
-  border: 2px solid;
   color: #ffff;
+  width: fit-content;
   font-size: 120px;
   text-shadow: -2px 2px 0 #b056be, 2px 2px 0 #b056be, 2px -2px 0 #b056be,
     -2px -2px 0 #b056be;
@@ -79,4 +76,117 @@ main {
 
 .home_headline_3 {
   margin-right: 15%;
+}
+
+/* Media Style for 1024px */
+
+@media screen and (max-width: 1024px) {
+  main {
+    height: 550px;
+    padding: 10px;
+  }
+  .home_headline_1,
+  .home_headline_3 {
+    font-weight: 500;
+  }
+
+  .home_headline_2 {
+    font-size: 80px;
+  }
+
+  .home_img_1 {
+    width: 400px;
+  }
+  .home_img_2 {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    height: 500px;
+    padding: 10px;
+  }
+
+  .home_headline_1 {
+    width: fit-content;
+    margin: 2px;
+  }
+  .home_headline_3 {
+    margin-right: 0px;
+  }
+
+  .home_image_container {
+    padding-left: 5px;
+    position: relative;
+    max-width: 600px;
+    height: 72%;
+    margin: 2%;
+  }
+
+  .heading_2_container {
+    left: 4%;
+
+    & :nth-child(2) {
+      padding-left: 0%;
+    }
+    & :nth-child(3) {
+      padding-left: 0%;
+    }
+  }
+
+  .home_img_1 {
+    width: 380px;
+  }
+  .home_img_2 {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    height: fit-content;
+    padding: 0%;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .main_left_container,
+  .main_right_container {
+    width: 100%;
+    padding: 10px;
+    height: 400px;
+  }
+  .main_right_container {
+    height: 500px;
+  }
+
+  .home_headline_1 {
+    margin: 2%;
+    line-height: 20px;
+  }
+
+  .home_headline_2 {
+    font-size: 80px;
+  }
+
+  .home_headline_3 {
+    margin-right: 0px;
+  }
+
+  .home_image_container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .heading_2_container {
+    width: 100%;
+    left: 2%;
+    position: relative;
+  }
+
+  .home_img_1 {
+    width: 380px;
+  }
+  .home_img_2 {
+    width: 220px;
+  }
 }

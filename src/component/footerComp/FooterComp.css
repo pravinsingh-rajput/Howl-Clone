@@ -52,3 +52,40 @@ input:focus {
   font-size: 10px;
   margin: 5px;
 }
+
+.footer_container_one,
+.footer_container_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 2%;
+    height: 120px;
+  }
+  .newsletter {
+    width: 260px;
+  }
+  .copright {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 2%;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .newsletter {
+    width: 260px;
+  }
+  .copright {
+    width: 100%;
+  }
+
+  .footer_container_two {
+    flex-direction: column;
+  }
+}
