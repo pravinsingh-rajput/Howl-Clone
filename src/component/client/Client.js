@@ -7,7 +7,7 @@ const Client = () => {
     return Math.floor(Math.random() * 6) + 1;
   };
 
-  const modifiedClientImageUrls = [...Array(16).keys()].map((index) => {
+  const modifiedClientImageUrls = [...Array(14).keys()].map((index) => {
     const randomValue = getRandomNumber();
     return `./Assets/clientimg/client${randomValue}.jpg`;
   });
