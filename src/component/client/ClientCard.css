@@ -1,0 +1,14 @@
+.profileCard {
+  overflow: hidden;
+  margin: 2px;
+  cursor: pointer;
+  position: relative;
+  width: 145px;
+  height: 200px;
+  transition: all 2s ease-in-out;
+}
+
+.profileCard img {
+  width: 145px;
+  height: 200px;
+}
