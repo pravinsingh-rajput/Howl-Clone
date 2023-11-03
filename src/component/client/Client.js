@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Client.css";
 import ClientCard from "./ClientCard";
 
 const Client = () => {
-  const [randomNumber, setRandomNumber] = useState(null);
-
   const getRandomNumber = () => {
     return Math.floor(Math.random() * 6) + 1;
   };
