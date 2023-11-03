@@ -21,7 +21,44 @@
 .client_container {
   height: fit-content;
   display: grid;
+  overflow: hidden;
+  max-height: 418px;
   grid-template-columns: repeat(7, minmax(150px, 1fr));
   grid-template-rows: repeat(2, auto);
   gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .client_container {
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+  }
+}
+@media screen and (max-width: 768px) {
+  .clientpage {
+    height: 600px;
+    padding: 0px 2%;
+  }
+  .client_headline {
+    color: #b056be;
+    font-size: 45px;
+    margin-left: 0px;
+  }
+  .client_container {
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+  }
+}
+@media screen and (max-width: 425px) {
+  .clientpage {
+    height: 460px;
+    padding: 0px 2%;
+  }
+  .client_headline {
+    color: #b056be;
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  .client_container {
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 5px;
+  }
 }

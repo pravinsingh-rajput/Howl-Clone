@@ -5,10 +5,21 @@
   position: relative;
   width: 145px;
   height: 200px;
-  transition: all 2s ease-in-out;
 }
 
 .profileCard img {
   width: 145px;
   height: 200px;
+}
+
+@media screen and (max-width: 425px) {
+  .profileCard {
+    width: 120px;
+    height: 180px;
+  }
+
+  .profileCard img {
+    width: 120px;
+    height: 160px;
+  }
 }
